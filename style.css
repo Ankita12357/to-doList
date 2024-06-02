@@ -1,0 +1,117 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    justify-content: center;
+    
+}
+:root{
+    --col:#ffffff;
+    --col2:black;
+    --col3:rgb(31, 69, 90);
+}
+.darkmode{
+    --col:#181818;
+    --col2:#ffffff;
+    --col3:rgb(106, 197, 227);
+}
+h2{
+      position: absolute;
+    white-space: nowrap;
+    color:var(--col2);
+    animation: moveLeft 3s infinite linear;
+}
+@keyframes moveLeft {
+    0% {
+        right: 60%; /* Start outside of the viewport to the right */
+    }
+    100% {
+        right: 10%; /* Move to outside of the viewport to the left */
+    }
+}
+.container{
+   
+    width:100%;
+    min-height: 100vh;
+    padding: 10px;
+    background: linear-gradient(rgb(180, 144, 144),rgb(110, 110, 155),rgb(149, 63, 90));
+       
+}
+.todo{
+    justify-content: center;
+    text-align: center;
+    background-color:var(--col);
+    position: relative;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    padding: 40px 20px 70px;
+    border-radius: 12px;
+  
+}
+.row{
+    font-family: none;
+    padding:70px 100px ;
+    justify-content: center;
+    align-items: center;
+    
+}
+.todo input,button{
+    padding: 10px 30px;
+    border-radius:10px;
+    
+    
+}
+.mains{
+    display: flex;
+    justify-content: left;
+    padding-bottom: 10px;
+}
+#list {
+    color:var(--col2);
+    margin: 0px 30px;
+    
+   
+}
+.delete{
+    height:3vh;
+    width:3vh;
+   position:absolute;
+   margin-left: 430px;
+    border-radius:50%;
+    cursor: pointer;
+    color:var(--col3);
+}
+
+.mains div{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--col2);
+    border-color: var(--col2);
+    margin: 0px 20px;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+   
+    
+}
+
+.nav{
+    display: flex;
+   justify-content:space-between;
+}
+.left{
+    display: flex;
+}
+#icon{
+    height:5vh;
+    width:5vh;
+    cursor: pointer;
+    
+}
+#ph{
+    height:15vh;
+    width:15vh;
+    margin: 0px 24px;
+    cursor: pointer;
+}
